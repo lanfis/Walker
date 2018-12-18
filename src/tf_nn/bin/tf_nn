@@ -1,0 +1,42 @@
+#!/usr/bin/env python
+# license removed for brevity
+import os
+import sys
+import rospy
+from std_msgs.msg import String
+
+full_path = os.path.realpath(__file__)
+current_folder, file_name = os.path.split(full_path)
+sys.path.append(current_folder)
+#sys.path.append(current_folder + "/../../../include")
+dir = os.path.realpath(current_folder+"/../../../include")
+sys.path.append(dir)
+sys.path.append(dir + "/matrix/python")
+from console_format import Console_Format
+from tf_nn.tf_deeplab_vis import TF_DEEPLAB_VIS
+import cv2
+
+
+if __name__ == '__main__':
+    flag_is_test = True
+    
+    nodeName = 'TF_DeepLab_VIS'
+    rospy.loginfo("Initializing " + nodeName + " ...")
+    
+    rospy.init_node(nodeName, anonymous=True)
+    dlv = TF_DEEPLAB_VIS(nodeName)
+    
+    rospy.loginfo(nodeName + " activating ok !")
+    '''
+    if dlv.init():
+        rospy.loginfo(nodeName + " activating ok !")
+    else:
+        rospy.logerr(nodeName + " activating fail !")
+    '''
+    
+    rate = rospy.Rate(600)
+    while not rospy.is_shutdown():
+        #dlv.run()
+        rate.sleep()
+    
+    #rospy.spin()

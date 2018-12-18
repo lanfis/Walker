@@ -1,0 +1,50 @@
+
+<library path="lib/libcamera_focus">
+  <class name="camera_focus_nodelet/camera_focus" type="camera_focus_nodelet::camera_focus" base_class_type="nodelet::Nodelet">
+  <description>
+  This is my nodelet.
+  </description>
+  </class>
+</library>
+
+<library path="lib/libmser_detector">
+  <class name="mser_detector_nodelet/mser_detector" type="mser_detector_nodelet::mser_detector" base_class_type="nodelet::Nodelet">
+  <description>
+  This is my nodelet.
+  </description>
+  </class>
+</library>
+
+<library path="lib/libface_detector">
+  <class name="face_detector_nodelet/face_detector" type="face_detector_nodelet::face_detector" base_class_type="nodelet::Nodelet">
+  <description>
+  This is my nodelet.
+  </description>
+  </class>
+</library>
+<!--
+<library path="lib/libmotion_detector">
+  <class name="motion_detector_nodelet/motion_detector" type="motion_detector_nodelet::motion_detector" base_class_type="nodelet::Nodelet">
+  <description>
+  This is my nodelet.
+  </description>
+  </class>
+</library>
+
+<library path="lib/libimage_tracker">
+  <class name="image_tracker_nodelet/image_tracker" type="image_tracker_nodelet::image_tracker" base_class_type="nodelet::Nodelet">
+  <description>
+  This is my nodelet.
+  </description>
+  </class>
+</library>
+
+
+<library path="lib/libface_detector">
+  <class name="face_detector_nodelet/face_detector" type="face_detector_nodelet::face_detector" base_class_type="nodelet::Nodelet">
+  <description>
+  This is my nodelet.
+  </description>
+  </class>
+</library>
+-->

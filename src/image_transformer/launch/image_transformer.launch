@@ -1,0 +1,6 @@
+<launch>
+  <node name="image_transformer" pkg="image_transformer" type="image_transformer" respawn="false" output="screen">
+      <remap from="/Image_Transformer/image" to="/pic_sim/image_raw"/>
+      <remap from="/Image_Transformer/image_roi" to="TF_DeepLab_VIS/image_sub"/>
+  </node>
+</launch>

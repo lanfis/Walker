@@ -1,0 +1,7 @@
+<launch>
+  <node name="vision_system" pkg="vision_system" type="vision_system" respawn="false" output="screen">
+      <remap from="/Camera_Focus/image" to="/Camera/image"/>
+      <remap from="/MSER_Detector/image_thermal" to="/IRCamera/thermal_image"/>
+      <remap from="/Face_Detector/image" to="/Camera_Focus/image"/>
+  </node>
+</launch>

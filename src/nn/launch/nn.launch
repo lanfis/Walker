@@ -1,0 +1,9 @@
+<launch>
+ <node name="vision_system" pkg="vision_system" type="vision_system" respawn="false" output="screen">
+  </node>
+  
+  <node name="nn_cnn" pkg="nn" type="nn_cnn" respawn="false" output="screen">
+      <!--<remap from="/NN_CNN/image_sub" to="/pic_sim/image_raw"/>-->
+      <remap from="/NN_CNN/image_sub" to="/Camera/image"/>
+  </node>
+</launch>
