@@ -10,3 +10,13 @@ a.out
 
 # Add in special Atari 7800-based binaries for good measure
 *.a78
+
+build
+devel
+image_database
+nn
+models
+include/nn
+src/nn
+include/tf_nn
+src/tf_nn
